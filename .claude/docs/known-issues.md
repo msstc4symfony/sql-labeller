@@ -19,3 +19,6 @@
 - **PHPStan без DBAL**: `make check` рассчитан на CI-профиль (`composer-ci.json` с doctrine/dbal); `phpstan-ci.neon` —
   шаблон стандарта, его комментарий про class.notFound в baseline общий для семейства, baseline здесь пуст.
 - **`[ ]`** (пробелы в скобках) → после `trim` пустое имя → null.
+- **`composer-ci.lock` в git**, как у остальных пакетов семейства: job `setup` CI ставит зависимости по нему. Локально
+  `roave/security-advisories` конфликтует с PHP 8.4.17 — lock обновлять с `--ignore-platform-req=php`, работать через
+  `composer-local.json`.
