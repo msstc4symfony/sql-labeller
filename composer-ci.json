@@ -1,0 +1,59 @@
+{
+  "name": "msstc4symfony/sql-labeller",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maxim Shamaev",
+      "email": "maxim.shamaev@gmail.com"
+    }
+  ],
+  "type": "library",
+  "description": "Statement type and table of an SQL string, for metric labels and span names (CI profile — CI-only tools)",
+  "minimum-stability": "stable",
+  "keywords": [
+    "php",
+    "sql",
+    "doctrine",
+    "metrics",
+    "profiling"
+  ],
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Msstc4Symfony\\SqlLabeller\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Msstc4Symfony\\SqlLabeller\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "deptrac/deptrac": "^4.6",
+    "doctrine/dbal": "^4.0",
+    "friendsofphp/php-cs-fixer": "^3.76",
+    "infection/infection": "^0.32",
+    "phpstan/extension-installer": "^1.4",
+    "phpstan/phpstan": "^2.1",
+    "phpstan/phpstan-strict-rules": "^2.0",
+    "phpunit/phpunit": ">=11.0",
+    "rector/rector": "^2.1",
+    "roave/backward-compatibility-check": "^8.20",
+    "roave/security-advisories": "dev-latest"
+  },
+  "config": {
+    "allow-plugins": {
+      "infection/extension-installer": true,
+      "phpstan/extension-installer": true
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "bundle-standard": {
+      "kind": "library"
+    }
+  }
+}
