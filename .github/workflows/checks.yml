@@ -22,7 +22,7 @@ permissions:
 
 jobs:
   standard:
-    uses: msstc4symfony/bundle-standard/.github/workflows/php-bundle.yml@v4.0.0
+    uses: msstc4symfony/bundle-standard/.github/workflows/php-bundle.yml@v4.1.0
     with:
       # A plain PHP library: no Symfony version to test against (the checks are named "Symfony none").
       symfony-versions: '[{"version":"none","label":"none"}]'
